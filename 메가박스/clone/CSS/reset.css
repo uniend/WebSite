@@ -42,10 +42,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
 
 /*float사용시*/
 /* clearfix */
-.clearfix{*zoom:1;}
 .clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
 .clearfix:after {clear: both;}
