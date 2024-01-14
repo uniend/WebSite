@@ -12,8 +12,16 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/art1.css">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/font.css">
+
+
+  <!-- 슬라이더 -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 
   <!-- 파비콘 -->
@@ -347,14 +355,28 @@
 
 
       <div class="main_search">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+        <div class="search">
+          <form action="#" method="post" class="search-form">
+            <input type="text" class="search-input" placeholder="영화명을 입력해주세요">
+            <button type="button" class="search-btn"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+          </form>
+        </div>
+        <div class="time ">
+          <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+          <p>상영시간표</p>
+        </div>
+        <div class="office">
+          <a href="#"><i class="fa-solid fa-film"></i></a>
+          <p>박스오피스</p>
+        </div>
+        <div class="fastBuy">
+          <a href="#"><i class="fa-solid fa-ticket"></i></a>
+          <p>빠른예매</p>
+        </div>
       </div>
 
 
-      <div class="icon">
+      <div class="search-icon">
         <img src="./ASSET/img/ico-mouse.png" alt="">
       </div>
     </div>
@@ -366,7 +388,85 @@
 
 
   
-  <article></article>
+  <article>
+
+    <div class="art1" >
+      <div class="art1-warp container">
+        <div class="art1-tit">
+          <h2>혜택</h2>
+          <a href="#"><i class="fa-solid fa-plus"></i></a>
+        </div>
+        <div class="art1-slide">
+          <!-- 슬라이더 -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                      <a href="#"><img src="./ASSET/img/slide-tit1.png" alt=""></a>
+                      <a href="#"><img src="./ASSET/img/slide-img1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <a href="#"><img src="./ASSET/img/slide-tit2.png" alt=""></a>
+                    <a href="#"><img src="./ASSET/img/slide-img2.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <a href="#"><img src="./ASSET/img/slide-tit3.jpg" alt=""></a>
+                    <a href="#"><img src="./ASSET/img/slide-img3.jpg" alt=""></a>
+                  </div>
+                </div>
+            </div>
+            <!-- 페이지네이션 -->
+            <div class="pagination_container">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination2"></div>
+            </div>
+            <!-- 버튼 -->
+            <div class="btn_container">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="art1-banner container">
+          <div class="banner">
+            <a href="#"><img src="./ASSET/img/event01.jpg" alt=""></a>
+            <a href="#"><img src="./ASSET/img/event01@2.jpg" alt=""></a>
+          </div>
+          <div class="right-banner">
+            <a href="#"><img src="./ASSET/img/event02.jpg" alt=""></a>
+          </div>
+        </div>
+
+
+        <div class="art1-menuLink">
+          <div class="menuLink-img vip">
+            <a href="">vip lounge</a>
+          </div>
+          <div class="menuLink-img membership">
+            <a href="">멤버십</a>
+          </div>
+          <div class="menuLink-img card">
+            <a href="">할인카드안내</a>
+          </div>
+          <div class="menuLink-img event">
+            <a href="">이벤트</a>
+          </div>
+          <div class="menuLink-img store">
+            <a href="">스토어</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
   <footer></footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="JAVASCRIPT/swiper.js"></script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+.article{
+  position: relative;
+  height: auto;
+}
+
+
+.art1{
+  padding: 60px 0;
+  position: relative;
+}
+
+.art1::before{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 513px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #503396;
+  border-bottom: 1px solid white;
+
+}
+
+
+.art1-tit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.art1-tit > h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.art1-tit  > a {
+  font-size: 20px;
+}
+
+
+/* 스와이퍼  */
+
+.swiper {
+  width: 650px;
+  height: 325px;
+  left: -210px;
+  position: relative;
+}
+
+.slide-content{
+  display: flex;
+}
+
+.pagination_container{
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  
+}
+.slide-content>a>img{
+  width: 100%;;
+  height: auto;
+}
+
+.swiper-fraction{
+  width: 200px;
+}
+.swiper-pagination2{
+ width: 10px;
+ height: 50px;
+}
+
+.swiper-pagination-progressbar{
+  width: 15px;
+  height: 4px;
+}
+
+.swiper-button-prev{
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
+
+/* 
+베너 */
+
+.art1-banner{
+  position: relative;
+}
+.banner{
+  width: 180px;
+  height: 160px;
+  display: flex;
+}
+
+
+.banner>a:first-child>img{
+  width: 400px;
+  height: 204px;
+  margin-right: 20px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.banner>a:last-child>img{
+  width: 204px;
+  height: 204px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.banner>a>img{
+  width: auto;
+  height: auto;
+}
+
+
+.right-banner{
+  position: absolute;
+  top: -305px;
+  right: 0;
+  z-index: 60;
+}
+
+.right-banner>a>img{
+  width: 410px;
+  height: 510px;
+}
+
+
+/* 멤버쉽 */
+.art1-menuLink{
+  position: relative;
+  padding: 100px 0  40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuLink-img{
+  width: 20%;
+}
+
+.menuLink-img > a{
+  color: white;
+  display: block;
+  height: 60px;
+  text-align: center;
+  padding: 60px 0 0 0;
+  text-transform: uppercase;
+}
+
+.art1-menuLink .vip{
+  background-image: url(../ASSET/img/ico-vip-main.png);
+  background-repeat: no-repeat;
+  background-position: center 2px;
+}
+
+.art1-menuLink .membership{
+  background-image: url(../ASSET/img/ico-membership-main.png);
+  background-repeat: no-repeat;
+  background-position: center 2px;
+}
+
+.art1-menuLink .card{
+  background-image: url(../ASSET/img/ico-card-main.png);
+  background-repeat: no-repeat;
+  background-position: center 2px;
+}
+
+.art1-menuLink .event{
+  background-image: url(../ASSET/img/ico-event-main.png);
+  background-repeat: no-repeat;
+  background-position: center 2px;
+}
+
+.art1-menuLink .store{
+  background-image: url(../ASSET/img/ico-store-main.png);
+  background-repeat: no-repeat;
+  background-position: center 2px;
+}
