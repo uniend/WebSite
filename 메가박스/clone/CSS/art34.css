@@ -1,0 +1,256 @@
+.art3 {
+  background-color: #252451;
+  padding: 60px 0 120px 0;
+}
+
+.art3-tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.art3-tit > h4 {
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: -4px;
+}
+
+.art3-tit > a > span {
+  font-size: 14px;
+  color: rgb(120, 119, 119);
+}
+
+.art3-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-main {
+  position: relative;
+  margin-right: 50px;
+}
+
+.content-main::before {
+  content: "MEGABOX CLASSIC SOCIETY";
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 40px 40px;
+  background-color: #32627f;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 8px 8px 8px rgb(44, 44, 44);
+}
+
+.content-main > a {
+  width: 300px;
+  height: 430px;
+  display: block;
+}
+
+.content-main > a > img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.art3-btn {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.art3-btn > button {
+  width: 48%;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.art3-btn > button:first-child {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+}
+
+.art3-btn > button:first-child:hover {
+  border: none;
+  background-color: #037b94;
+  color: white;
+  transition: ease-in 0.2s;
+}
+
+.art3-btn > button:last-child {
+  background-color: #037b94;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+.art3-btn > button:last-child:hover {
+  transition: ease-in 0.2s;
+  background-color: white;
+  color: #037b94;
+}
+
+.contetnt-d-tit {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(224, 218, 218, 0.594);
+}
+.contetnt-d-tit span,
+p {
+  color: white;
+}
+
+.contetnt-d-tit > span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.contetnt-d-tit > p {
+  font-size: 36px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.content-d-txt {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+
+.content-d-moreImgWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreimg{
+  position: relative;
+}
+
+.moreimg-f::before{
+  content: 'f';
+  width:  35px;
+  height: 45px;
+  background: #da3f31;
+  clip-path: polygon(0 0, 100% 0%, 100% 57%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+
+.moreimg-c::before{
+  content: 'c';
+  width:  35px;
+  height: 35px;
+  background: #32627f;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding-top: 5px;
+  border-radius: 0 0 50% 50%;
+}
+
+
+.moreimg > a > img{
+  width: 170px;
+  height: 244px;
+  border-radius: 10px;
+}
+.moreimg > a > span{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
+
+/* 메가벅스안내 */
+.art4{
+  padding: 60px 0;
+}
+
+.art4 > h5{
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -4px;
+  color: #252451;
+  margin-bottom: 40px;
+}
+.art4_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.art4-img{
+  display: block;
+  width: 170px;
+  height: 170px;
+  text-indent: -9999px;
+  border-radius: 15px;
+  background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 170px 340px;
+}
+
+.art4-img.img1{
+  background: url(../ASSET/img/bg-main-megainfo-dolby.png);
+}
+
+.art4-img.img2{
+  background: url(../ASSET/img/bg-main-megainfo-private.png);
+}
+
+
+.art4-img.img3{
+  background: url(../ASSET/img/bg-main-megainfo-boutique3.png);
+}
+
+.art4-img.img4{
+  background: url(../ASSET/img/bg-main-megainfo-atmos2.png);
+}
+
+.art4-img.img5{
+  background: url(../ASSET/img/bg-main-megainfo-comfort.png);
+}
+
+.art4-img.img6{
+  background: url(../ASSET/img/bg-main-megainfo-kids.png);
+}
+
+

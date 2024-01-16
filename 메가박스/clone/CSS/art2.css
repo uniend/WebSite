@@ -1,0 +1,82 @@
+.art2 {
+  padding: 40px 0 60px 0;
+  background-color: #503396;
+}
+
+.art2-cell {
+  display: flex;
+  align-items: center;
+}
+
+.art2_left {
+  margin-right: 120px;
+  color: white;
+}
+
+.art2_left > h5 {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.art2_right {
+  position: relative;
+}
+.art2_right > .art2_img {
+  position: relative;
+}
+
+.art2_right > .art2_img > a {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../ASSET/img/poster07.jpg);
+  background-size: cover;
+}
+
+.art_img_overay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+.art_img_overay:hover {
+  background-color: white;
+}
+.art_img_overay:hover .art2-txt {
+  color: #01738b;
+}
+
+.art2-txt {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.art2-txt > span {
+  display: block;
+}
+
+.art2-txt::before {
+  content: "신규오픈";
+  background-color: #01738b;
+  font-weight: 700;
+  width: 80px;
+  padding: 3px 10px;
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  font-size: 14px;
+}
+
+.art2-txt > span:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
