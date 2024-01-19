@@ -1,0 +1,95 @@
+
+footer{
+  position: relative;
+
+}
+.f-ad{
+  height: 227px;
+}
+
+.f-ad::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eff0f9;
+  height: 227px;
+  z-index: -1;
+}
+
+.f-setction{
+  padding: 40px 0 40px 0;
+}
+.f_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f_nav > ul {
+  display: flex;
+}
+
+.f_nav > ul> li>a{
+  font-size: 13px;
+  margin-right: 20px;
+}
+
+.f_icon{
+  text-align: center;
+  width: 100px;
+  border: 1px solid rgb(188, 188, 188);
+  font-size: 13px;
+  line-height: 30px;
+  border-radius: 15px;
+}
+
+.f_icon>span{
+  font-size: 16px;
+}
+
+
+.f_info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.contact {
+  font-size: 13px;
+  margin-left: 15PX;
+}
+
+.contact > ul> address{
+  font-style: normal;
+}
+.contact > ul {
+  width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contact > ul > address{
+  margin-right: 15px;
+}
+.contact > ul > li > a {
+  font-size: 13px;
+  line-height: 20px;
+}
+.sns{
+  display: flex;
+}
+.sns > a{
+  color: white;
+  font-size: 18px;
+  text-align: center; 
+  line-height: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 4px;
+}
