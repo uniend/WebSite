@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="CSS/footer.css">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/font.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   <!-- 슬라이더 -->
@@ -51,7 +52,8 @@
     <!-- 폰트어썸-->
     <script src="https://kit.fontawesome.com/99e3dc3033.js" crossorigin="anonymous"></script>
 
-  <script src="JAVASCRIPT/script.js"></script>
+
+  
 </head>
 <body>
   <header id="header">
@@ -78,42 +80,42 @@
       <nav class="gnb">
         <div class="deth2_bg"></div>
         <div class="link_area">
-          <div class="toggle_menu">
-            <span class="bar-top"></span>
-            <span class="bar-middle"></span>
-            <span class="bar-bottom"></span>
+          <div class="toggle_menu" onclick="handleMenuToggle()">
+            <div class="bar-top"></div>
+            <div class="bar-middle"></div>
+            <div class="bar-bottom"></div>
           </div>
           <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-        <ul class="nav">
-          <div>
-            <li>
-              <a href="#">영화</a>
-                  <ul class="deth2 movie_deth2">
+        <ul class="nav" onmouseover="hoverMenu('block')" onmouseout="hoverMenu('none')">
+          <div >
+            <li onmouseover="hoverMenuli('movie_deth2','block')" onmouseleave="hoverMenuli( 'movie_deth2','none')">
+              <a href="#" >영화</a>
+                  <ul class="deth2 movie_deth2" >
                     <li><a href="#">전체영화</a></li>
                     <li><a href="#">큐레이션</a></li>
                     <li><a href="#">무비포스트</a></li>
                   </ul>
             </li>
-            <li>
-              <a href="#">예매</a>
+            <li onmouseover="hoverMenuli('buy_deth2','block')" onmouseleave="hoverMenuli('buy_deth2','none')">
+              <a href="" > 예매</a>
                 <ul class="deth2 buy_deth2">
                   <li><a href="#">빠른예매</a></li>
                   <li><a href="#">상영시간표</a></li>
                   <li><a href="#">프라이빗 예매</a></li>
                 </ul>
             </li>
-            <li>
-              <a href="#">극장</a>
-                <ul class="deth2 place_deth2">
+            <li onmouseover="hoverMenuli('place_deth2','block')" onmouseleave="hoverMenuli('place_deth2','none')">
+              <a href="#" >극장</a>
+                <ul class="deth2 place_deth2" >
                   <li><a href="#">전체극장</a></li>
                   <li><a href="#">특별관</a></li>
                 </ul>
             </li>
           </div>
           <div>
-            <li>
-              <a href="#">이벤트</a>
+            <li onmouseover="hoverMenuli('event_deth2','block')" onmouseleave="hoverMenuli('event_deth2','none')">
+              <a href="#" >이벤트</a>
                 <ul class=" deth2 event_deth2">
                   <li><a href="#">진행중 이벤트</a></li>
                   <li><a href="#">지난 이벤트</a></li>
@@ -123,9 +125,9 @@
             <li>
               <a href="#">스토어</a>
             </li>
-            <li>
+            <li onmouseover="hoverMenuli('money_deth2','block')" onmouseleave="hoverMenuli('money_deth2','none')" >
               <a href="#">혜택</a>
-                <ul class=" deth2 money_deth2">
+                <ul class=" deth2 money_deth2" >
                   <li><a href="#">메가박스 멤버십</a></li>
                   <li><a href="#">제휴/할인</a></li>
                 </ul>
@@ -133,8 +135,8 @@
           </div>
         </ul>
         <div class="link_mypage">
-          <a href="#" class="icon"><i class="fa-solid fa-calendar-days"></i></a>
-          <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+          <a href="#" class="icon" onclick="alertMsg(event)"><i class="fa-solid fa-calendar-days"></i></a>
+          <a href="#" class="icon" onclick="alertMsg(event)"><i class="fa-solid fa-user"></i></a>
         </div>
       </nav>
       <div class="menu_wrap">
@@ -240,19 +242,19 @@
 
 
 
-  <main id="main">
-    <div id="section01" class="section01">
+  <main id="main"  href="#" >
+    <div id="section01" class="section01" >
       <div class="g-overay"></div>
       <div class="bg"></div>
     </div>
     <!-- 백그라운드 -->
-    <div class="mainitem container">
+    <div class="mainitem container" >
 
 
 
       <div class="main_tit">
         <h4>박스오피스</h4>
-        <a>더 많은 영화보기<span><i class="fa-solid fa-plus"></i></span></a>
+        <a href="#" onclick="alertMsg(event)">더 많은 영화보기<span><i class="fa-solid fa-plus"></i></span></a>
       </div>
 
 
@@ -278,7 +280,7 @@
               <a href="#"><i class="fa-regular fa-heart"></i></a>
               <span>923</span>
             </div>
-            <button class="main_btn">예매</button>
+            <button class="main_btn" onclick="alertMsg(event)">예매</button>
           </div>
         </li>
 
@@ -300,7 +302,7 @@
               <a href="#"><i class="fa-regular fa-heart"></i></a>
               <span>2k</span>
             </div>
-            <button class="main_btn">예매</button>
+            <button class="main_btn" onclick="alertMsg(event)">예매</button>
           </div>
         </li>
 
@@ -322,7 +324,7 @@
               <a href="#"><i class="fa-regular fa-heart"></i></a>
               <span>1.3k</span>
             </div>
-            <button class="main_btn">예매</button>
+            <button class="main_btn" onclick="alertMsg()">예매</button>
           </div>
         </li>
 
@@ -346,7 +348,7 @@
               <a href="#"><i class="fa-regular fa-heart"></i></a>
               <span>3.4k</span>
             </div>
-            <button class="main_btn">예매</button>
+            <button class="main_btn" onclick="alertMsg(event)">예매</button>
           </div>
         </li>
       </div>
@@ -357,22 +359,22 @@
 
 
 
-      <div class="main_search">
-        <div class="search">
+      <div class="main_search" >
+        <div class="search" >
           <form action="#" method="post" class="search-form">
-            <input type="text" class="search-input" placeholder="영화명을 입력해주세요">
+            <input type="text" class="search-input" placeholder="영화명을 입력해주세요" onclick="alertMsg(event)">
             <button type="button" class="search-btn"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
           </form>
         </div>
-        <div class="time ">
+        <div class="time" onclick="alertMsg(event)">
           <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
           <p>상영시간표</p>
         </div>
-        <div class="office">
+        <div class="office" onclick="alertMsg(event)">
           <a href="#"><i class="fa-solid fa-film"></i></a>
           <p>박스오피스</p>
         </div>
-        <div class="fastBuy">
+        <div class="fastBuy" onclick="alertMsg(event)">
           <a href="#"><i class="fa-solid fa-ticket"></i></a>
           <p>빠른예매</p>
         </div>
@@ -397,7 +399,7 @@
       <div class="art1-warp container">
         <div class="art1-tit">
           <h2>혜택</h2>
-          <a href="#"><i class="fa-solid fa-plus"></i></a>
+          <a href="#" onclick="alertMsg(event)"><i class="fa-solid fa-plus"></i></a>
         </div>
         <div class="art1-slide">
           <!-- 슬라이더 -->
@@ -405,21 +407,21 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-content">
-                      <a href="#"><img src="./ASSET/img/slide-tit1.png" alt=""></a>
-                      <a href="#"><img src="./ASSET/img/slide-img1.png" alt=""></a>
+                    <div  class="slide-content">
+                      <a data-aos="fade-up"  data-aos-duration="3000" href="#"  ><img src="./ASSET/img/slide-tit1.png" alt=""></a>
+                      <a data-aos="fade-left"  data-aos-duration="3000"href="#"><img src="./ASSET/img/slide-img1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-content">
-                    <a href="#"><img src="./ASSET/img/slide-tit2.png" alt=""></a>
-                    <a href="#"><img src="./ASSET/img/slide-img2.png" alt=""></a>
+                    <a  data-aos="fade-up" href="#"><img src="./ASSET/img/slide-tit2.png" alt=""></a>
+                    <a data-aos="fade-left" href="#"><img src="./ASSET/img/slide-img2.png" alt=""></a>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-content">
-                    <a href="#"><img src="./ASSET/img/slide-tit3.jpg" alt=""></a>
-                    <a href="#"><img src="./ASSET/img/slide-img3.jpg" alt=""></a>
+                    <a  data-aos="fade-up" href="#"><img src="./ASSET/img/slide-tit3.jpg" alt=""></a>
+                    <a data-aos="fade-left" href="#"><img src="./ASSET/img/slide-img3.jpg" alt=""></a>
                   </div>
                 </div>
             </div>
@@ -447,20 +449,20 @@
 
 
         <div class="art1-menuLink">
-          <div class="menuLink-img vip">
-            <a href="">vip lounge</a>
+          <div class="menuLink-img vip" onclick="alertMsg(event)">
+            <a href="#">vip lounge</a>
           </div>
-          <div class="menuLink-img membership">
-            <a href="">멤버십</a>
+          <div class="menuLink-img membership" onclick="alertMsg(event)">
+            <a href="#">멤버십</a>
           </div>
-          <div class="menuLink-img card">
-            <a href="">할인카드안내</a>
+          <div class="menuLink-img card" onclick="alertMsg(event)">
+            <a href="#">할인카드안내</a>
           </div>
-          <div class="menuLink-img event">
-            <a href="">이벤트</a>
+          <div class="menuLink-img event" onclick="alertMsg(event)">
+            <a href="#">이벤트</a>
           </div>
-          <div class="menuLink-img store">
-            <a href="">스토어</a>
+          <div class="menuLink-img store" onclick="alertMsg(event)">
+            <a href="#">스토어</a>
           </div>
         </div>
       </div>
@@ -497,7 +499,7 @@
 
 
     <div class="art3">
-      <div class="container">
+      <div class="container" data-aos="fade-up"  data-aos-duration="1500">
         <div class="art3-tit">
           <h4>큐레이션</h4>
           <a href="">
@@ -511,9 +513,8 @@
               <img src="./ASSET/img/poster05.jpg" alt="">
             </a>
             <div class="art3-btn">
-              <button type="button">상세정보</button>
-              <button type="button">에매
-              </button>
+              <button type="button"  onclick="alertMsg(event)">상세정보</button>
+              <button type="button" onclick="alertMsg(event)">에매 </button>
             </div>
           </div>
           <div class="content-detail">
@@ -562,7 +563,7 @@
 
 
     <div class="art4 ">
-      <div class="art4-slide container">
+      <div class="art4-slide container" data-aos="fade-up"  data-aos-duration="1500">
         <h5>메가박스 안내 </h5>
         <div class="art4_list">
           <a href="" class="art4-img img1">DOLBY CINEMA</a>
@@ -589,23 +590,23 @@
 
 
 
-      <div class="art4-menuLink container">
-        <div class="menuLink-img customer ">
+      <div   class="art4-menuLink container" data-aos="fade-up"  data-aos-duration="1500">
+        <div class="menuLink-img customer "  onclick="alertMsg(event)">
           <a href="">고객센터</a>
         </div>
-        <div class="menuLink-img faq">
+        <div class="menuLink-img faq"  onclick="alertMsg(event)">
           <a href="">자주 묻는 질문</a>
         </div>
-        <div class="menuLink-img qna">
+        <div class="menuLink-img qna"  onclick="alertMsg(event)">
           <a href="">1:1 문의</a>
         </div>
-        <div class="menuLink-img group">
+        <div class="menuLink-img group"  onclick="alertMsg(event)">
           <a href="">단체/대관문의</a>
         </div>
-        <div class="menuLink-img lost">
+        <div class="menuLink-img lost"  onclick="alertMsg(event)">
           <a href="">분신물 문의/접수 </a>
         </div>
-        <div class="menuLink-img boutique">
+        <div class="menuLink-img boutique"  onclick="alertMsg(event)">
           <a href="">더 부티크 프라이빗 <br>대관예매</a>
         </div>
       </div>
@@ -639,7 +640,7 @@
             <li><a href=""> <strong>개인정보처리방침</strong> </a></li>
             <li><a href="">윤리경영</a></li>
           </ul>
-          <a href="" class="f_icon"> <span><i class="fa-solid fa-magnifying-glass"></i></span> 극장찾기</a>
+          <a href="" class="f_icon"  onclick="alertMsg(event)"> <span><i class="fa-solid fa-magnifying-glass"></i></span> 극장찾기</a>
         </div>
 
         <div class="f_info">
@@ -668,8 +669,18 @@
       </div>
   </footer>
 
+  <div class="moveTop">
+    <span><i class="fa-solid fa-up-long"></i></span>
+  </div>
 
+
+  <script src="JAVASCRIPT/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="JAVASCRIPT/swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

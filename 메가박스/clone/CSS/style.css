@@ -149,16 +149,16 @@
 
 .deth2.buy_deth2 {
   display: flex;
-  left: -80px;
+  left: -100px;
 }
 
 .deth2.place_deth2 {
   display: flex;
-  left: -80px;
+  left: -40px;
 }
 .deth2.event_deth2 {
   display: flex;
-  left: -80px;
+  left: -100px;
 }
 
 .deth2.money_deth2 {
@@ -167,25 +167,41 @@
 }
 
 .deth2 > li {
+  transition: 0.3s ease-in;
   display: none;
   margin-right: 20px;
 }
 .deth2 > li > a {
   color: white;
   font-size: 14px;
+  line-height: 20px;
 }
 .deth2 > li > a:hover {
   text-decoration: underline;
 }
 
-.toggle_menu > span {
+.toggle_menu{
+  cursor: pointer;
+}
+.toggle_menu > div {
   display: block;
   width: 25px;
   height: 2px;
   background-color: white;
   margin: 6px 0;
+  transition: 0.4s ease-in;
 }
 
+
+.change .bar-middle {
+  opacity: 0;
+} 
+.change .bar-top{
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar-bottom{
+  transform: translate(0, -5px) rotate(45deg);
+}
 /* 전체메뉴 */
 
 .menu_wrap {
@@ -197,6 +213,7 @@
   left: 0;
   right: 0;
   background-color: #333;
+  transition: 0.4s ease-in;
 }
 
 .menu_wrap .inner_menu {
